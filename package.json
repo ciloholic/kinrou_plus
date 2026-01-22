@@ -1,0 +1,12 @@
+{
+  "name": "kinrou-plus",
+  "version": "1.0.0",
+  "description": "勤労の獅子へ自動ログインするChrome拡張機能",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/popup/styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

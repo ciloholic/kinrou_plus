@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* ファイルをスキャン対象に含める */
+@source "../popup/*.html";
+@source "../popup/*.js";

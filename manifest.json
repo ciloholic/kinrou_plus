@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "勤労の獅子 Plus",
+  "version": "1.0.0",
+  "description": "勤労の獅子へ自動ログインするChrome拡張機能",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_title": "勤労の獅子 Plus",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "host_permissions": [
+    "https://kinrouap1.hr44.jp/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kinrouap1.hr44.jp/kinrou/kojin/*"
+      ],
+      "js": [
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
